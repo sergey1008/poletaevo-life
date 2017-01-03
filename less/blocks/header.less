@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    width: 980px;
+  }
+}
+
+.header__logo-img {
+  width: 349px;
+  height: 61px;
+  justify-content: flex-start;
+  img {
+    padding-top: 29px;
+  }
+}
+
+.header__feedback {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 36px;
+  height: 37px;
+  a {
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-decoration: none;
+    color: @base-font-color;
+  }
+  .feedback__phone {
+    padding: 10px;
+    color: @base-font-color;
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .feedback__btn {
+    width: auto;
+    padding: 10px;
+    align-content: center;
+    border: 1px solid @green;
+    // border-radius: 10px 0px 0px 10px;
+  }
+}
+
+.icon-phone {
+  ::before {
+    content: "";
+    width: 14px;
+    height: 16px;
+    background: url(../img/icon-phone.png) no-repeat;
+
+  }
+}
+
+.header__feedback a:nth-child(2) {
+  border-radius: 10px 0px 0px 10px;
+  color: @green;
+  font-weight: @regular;
+}
+
+.header__feedback a:nth-child(3) {
+  border-left: 0;
+  border-radius: 0px 10px 10px 0px;
+  background-color: @green;
+  color: @white;
+  font-weight: @regular;
+
+}
