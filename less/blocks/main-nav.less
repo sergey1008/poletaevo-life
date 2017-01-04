@@ -1,0 +1,45 @@
+.main-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: @white;
+  font-weight: @regular;
+  font-style: @normal;
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: @regular;
+    text-transform: uppercase;
+  }
+
+  .main-nav__wrapper {
+    width: 980px;
+    margin: 0 auto;
+  }
+}
+
+.main-nav__item {
+  display: flex;
+  padding-right: 4%;
+  text-align: center;
+  a {
+    display: block;
+    color: @white;
+    text-decoration: none;
+    padding-top: 22px;
+    letter-spacing: 1.55px;
+  }
+}

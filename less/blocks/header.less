@@ -8,6 +8,7 @@
     margin: 0 auto;
     padding: 0;
     width: 980px;
+    min-height: 118px;
   }
 }
 
@@ -28,42 +29,51 @@
   padding-top: 36px;
   height: 37px;
   a {
-    font-size: 15px;
-    line-height: 15px;
+    font-family: @local-font;
+    font-size: 16px;
+    line-height: 37px;
     text-transform: uppercase;
     vertical-align: middle;
     text-decoration: none;
     color: @base-font-color;
+    letter-spacing: 1px;
   }
   .feedback__phone {
+    position: relative;
+    font-family: @local-font;
     padding: 10px;
     color: @base-font-color;
-    font-weight: 100;
+    font-weight: @light;
     font-size: 20px;
+    padding-top: 6px;
+    padding-right: 22px;
+    background-color: white;
+    letter-spacing: 1.5px;
   }
   .feedback__btn {
     width: auto;
-    padding: 10px;
     align-content: center;
     border: 1px solid @green;
-    // border-radius: 10px 0px 0px 10px;
   }
 }
 
-.icon-phone {
-  ::before {
-    content: "";
-    width: 14px;
-    height: 16px;
-    background: url(../img/icon-phone.png) no-repeat;
+.feedback__phone::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -14px;
+  width: 14px;
+  height: 16px;
+  background: url(../img/icon-phone.png) no-repeat;
 
-  }
 }
 
 .header__feedback a:nth-child(2) {
   border-radius: 10px 0px 0px 10px;
   color: @green;
   font-weight: @regular;
+  padding-right: 11px;
+  padding-left: 11px;
 }
 
 .header__feedback a:nth-child(3) {
@@ -72,5 +82,7 @@
   background-color: @green;
   color: @white;
   font-weight: @regular;
+  padding-right: 11px;
+  padding-left: 11px;
 
 }

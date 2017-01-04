@@ -1,9 +1,37 @@
 body {
+  font-family: @local-font;
+  font-size: 14px;
   width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 980px;
 }
 
 img {
   display: block;
+}
+
+h2 {
+  font-family: @local-font-title;
+  font-size: 46px;
+  font-weight: @bold;
+  font-style: @regular;
+  color: #52b317;
+  // width: auto;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 23px;
+}
+
+@font-face {
+  font-family: @local-font-title;
+  src: url("../fonts/Peace Sans.otf") format("otf"),
+  url("../fonts/Peace Sans.otf") format("otf");
+  font-weight: @normal;
+  font-style: @normal;
 }
 
 @font-face {
