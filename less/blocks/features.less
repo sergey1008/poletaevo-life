@@ -2,23 +2,29 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  // margin: 0 auto;
-  // width: 980px;
-  min-height: 300px;
+  min-height: 412px;
   font-family: @local-font;
+  h2 {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
 }
 
 .features__flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+  min-height: 245px;
 
   .features__item {
-    width: 25%;
+    width: 18%;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    padding-top: 13px;
+    height: 100%;
+
   }
 }
 
@@ -31,13 +37,12 @@
     margin: 0 auto;
     font-weight: @bold;
     font-size: 18px;
-    align-items: baseline;
+    padding-top: 25px;
   }
   .features__text {
     text-align: center;
     font-weight: @light;
     font-size: 17px;
-    align-items: baseline;
   }
 
 }

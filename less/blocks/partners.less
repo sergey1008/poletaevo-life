@@ -1,0 +1,42 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 410px;
+  font-family: @local-font;
+  font-size: 17px;
+  font-weight: @light;
+  line-height: 21px;
+
+  h2 {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+}
+
+.partners-list  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  .partners-item {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+
+.partners-item {
+  .brand-icon {
+    display: flex;
+    margin: 0 auto;
+    align-items: baseline;
+    padding-bottom: 45px;
+  }
+  .brand-name__text {
+    text-align: center;
+  }
+}
