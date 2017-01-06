@@ -1,3 +1,82 @@
 body {
+  font-family: @local-font;
+  font-size: 14px;
   width: 100%;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  display: block;
+}
+
+h2 {
+  font-family: @local-font-title;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: @bold;
+  font-style: @regular;
+  color: #52b317;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.line-border {
+  border-bottom: 1px solid @space-gray;
+}
+
+@font-face {
+  font-family: @local-font-title;
+  src: url("../fonts/Peace Sans.otf") format("otf"),
+  url("../fonts/Peace Sans.otf") format("otf");
+  font-weight: @normal;
+  font-style: @normal;
+}
+
+@font-face {
+  font-family: @local-font;
+  src: url("../fonts/SourceSansPro-Regular.woff") format("woff"),
+  url("../fonts/SourceSansPro-Regular.woff") format("woff");
+  font-weight: @regular;
+  font-style: @normal;
+}
+
+@font-face {
+  font-family: @local-font;
+  src: url("../fonts/SourceSansPro-Bold.woff") format("woff"),
+  url("../fonts/SourceSansPro-Bold.woff") format("woff");
+  font-weight: @bold;
+  font-style: @normal;
+}
+
+@font-face {
+  font-family: @local-font;
+  src: url("../fonts/SourceSansPro-It.woff") format("woff"),
+  url("../fonts/SourceSansPro-It.woff") format("woff");
+  font-weight: @normal;
+  font-style: @italic;
+}
+
+@font-face {
+  font-family: @local-font;
+  src: url("../fonts/SourceSansPro-Light.woff") format("woff"),
+  url("../fonts/SourceSansPro-Light.woff") format("woff");
+  font-weight: @light;
+  font-style: @normal;
+}
+
+// @font-face {
+//   font-family: @local-font__blockquote;
+//   src: url("../fonts/pfagoraslabpro-ultrablack.ttf") format("ttf"),
+//   url("../fonts/pfagoraslabpro-ultrablack.ttf") format("ttf");
+//   font-weight: @normal;
+//   font-style: @normal;
+// }

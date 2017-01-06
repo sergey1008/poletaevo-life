@@ -1,0 +1,98 @@
+.header {
+  width: 100%;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    width: 980px;
+    min-height: 118px;
+  }
+}
+
+.header__logo-img {
+  width: 349px;
+  height: 61px;
+  justify-content: flex-start;
+  img {
+    padding-top: 29px;
+  }
+}
+
+.header__feedback {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 36px;
+  height: 37px;
+  a {
+    font-family: @local-font;
+    font-size: 16px;
+    line-height: 37px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  .feedback__phone {
+    position: relative;
+    font-family: @local-font;
+    padding: 10px;
+    color: @base-font-color;
+    font-weight: @light;
+    font-size: 20px;
+    padding-top: 6px;
+    padding-right: 22px;
+    background-color: white;
+    letter-spacing: 1.5px;
+  }
+
+.feedback__phone::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: -14px;
+  width: 14px;
+  height: 16px;
+  background: url(../img/icon-phone.png) no-repeat;
+
+}
+
+.feedback__btn {
+  width: auto;
+  align-content: center;
+  border: 1px solid @green;
+  border-right-width: 0px;
+  border-right-width: 0px;
+  }
+}
+
+.feedback__btn-left--white {
+  border-radius: 10px 0px 0px 10px;
+  color: #52b317;
+  font-weight: @regular;
+  padding-right: 11px;
+  padding-left: 11px;
+  &:hover {
+    background-color: #469914;
+    color: @white;
+  }
+}
+
+
+.feedback__btn--right--green {
+  border-left: 0;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #52b317;
+  font-weight: @regular;
+  padding-right: 11px;
+  padding-left: 11px;
+  color: @white;
+  &:hover {
+    background-color: #469914;
+  }
+}
