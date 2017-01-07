@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Полетаево Лайв</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="wrapper">
+    <div class="header__inner">
 
       <div class="header__logo">
         <a class="header__logo-img">
@@ -26,7 +26,7 @@
 
     <div class="slyder">
       <nav class="main-nav">
-        <ul class="main-nav__list main-nav__wrapper">
+        <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--active"><a href="#">Схема проезда</a></li>
           <li class="main-nav__item"><a href="#">Отзывы</a></li>
           <li class="main-nav__item"><a href="#">Новости</a></li>
@@ -42,24 +42,20 @@
 
   <main class="main">
 
-    <div class="intro-wrapper wrapper">
-      <h2>О поселке</h2>
-      <section class="intro">
+    <section class="intro">
+      <div class="intro-inner">
+        <h2>О поселке</h2>
         <p>Политическое учение Платона означает кризис легитимности, впрочем, не все политологи разделяют это мнение. Элемент политического процесса отражает постиндустриализм, утверждает руководитель аппарата Правительства. Социализм, короче говоря, отражает социализм.</p>
-        <div class="intro__img">
-          <div class="btn intro__btn">
-            <a href="#">Смотреть генплан</a>
-          </div>
-        </div>
-      </section>
-    </div>
+        <a class="btn btn-intro" href="#">Смотреть генплан</a>
+      </div>
+    </section>
 
     <div class="line-border"></div>
 
-      <section class="features wrapper">
-        <h2>Преимущества</h2>
-        <div class="features__flex">
+      <section class="features">
+        <div class="features__inner">
 
+        <h2>Преимущества</h2>
           <div class="features__item">
             <img class="features-icon" src="../img/clean.png" alt="" width="" height="">
             <b class="features__heading">Чистый воздух</b>
@@ -89,121 +85,129 @@
 
       <div class="line-border"></div>
 
-    <section class="reviews wrapper">
-      <div class="reviews-title">
-        <h2>Отзывы</h2>
-        <a class="btn btn--white" href="#">Смотреть все отзывы</a>
-      </div>
-      <div class="review">
-        <article class="review-list">
-          <div class="review__user">
-            <div class="review__photo">
-              <img src="../img/user-photo.png" alt="Екатерина Оболенская" width="" height="">
-            </div>
-            <div class="review__info">
-              <div class="review__date">15 Июля 2016 г.</div>
-              <div class="review__author">Екатерина Оболенская</div>
-            </div>
-          </div>
-          <blockquote class="rewiew__blockquote">Натуралистическая парадигма, на первый взгляд, иллюстрирует тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации с Японией. Коллапс Советского Союза представляет!!!</blockquote>
-        </article>
+    <section class="reviews">
+      <div class="reviews__inner">
 
-        <article class="review-list">
-          <div class="review__user">
-            <div class="review__photo">
-              <img src="../img/user-photo2.png" alt="Александр Романов" width="" height="">
+        <div class="reviews-title">
+          <h2>Отзывы</h2>
+          <a class="btn btn--white" href="#">Смотреть все отзывы</a>
+        </div>
+        <div class="review">
+          <article class="review-list">
+            <div class="review__user">
+              <div class="review__photo">
+                <img src="../img/user-photo.png" alt="Екатерина Оболенская" width="" height="">
+              </div>
+              <div class="review__info">
+                <div class="review__date">15 Июля 2016 г.</div>
+                <div class="review__author">Екатерина Оболенская</div>
+              </div>
             </div>
-            <div class="review__info">
-              <div class="review__date">11 Июля 2016 г.</div>
-              <div class="review__author">Александр Романов</div>
+            <blockquote class="rewiew__blockquote">Натуралистическая парадигма, на первый взгляд, иллюстрирует тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации с Японией. Коллапс Советского Союза представляет!!!</blockquote>
+          </article>
+
+          <article class="review-list">
+            <div class="review__user">
+              <div class="review__photo">
+                <img src="../img/user-photo2.png" alt="Александр Романов" width="" height="">
+              </div>
+              <div class="review__info">
+                <div class="review__date">11 Июля 2016 г.</div>
+                <div class="review__author">Александр Романов</div>
+              </div>
             </div>
-          </div>
-            <blockquote class="rewiew__blockquote">Политическое учение Локка, как правило, традиционно формирует элемент политического процесса. Кризис легитимности предсказуем. Понятие тоталитаризма, несмотря на внешние воздействия, существенно формирует постиндустриализм. Постиндустриализм, однако, сохраняет системный марксизм. Коллапс Советского Союза важно ограничивает гносеологический социализм.</blockquote>
-        </article>
+              <blockquote class="rewiew__blockquote">Политическое учение Локка, как правило, традиционно формирует элемент политического процесса. Кризис легитимности предсказуем. Понятие тоталитаризма, несмотря на внешние воздействия, существенно формирует постиндустриализм. Постиндустриализм, однако, сохраняет системный марксизм. Коллапс Советского Союза важно ограничивает гносеологический социализм.</blockquote>
+          </article>
+        </div>
       </div>
     </section>
 
     <div class="line-border"></div>
 
-    <section class="partners wrapper">
-      <h2>Партнеры</h2>
+    <section class="partners">
+      <div class="partners__inner">
 
-      <div class="partners-list">
-        <div class="partners-item">
-          <img class="brand-icon" src="../img/nike.png" alt="nike" width="" height="">
-          <div class="brand-name__text">Технологический партнер</div>
-        </div>
+        <h2>Партнеры</h2>
 
-        <div class="partners-item">
-          <img class="brand-icon" src="../img/levis.png" alt="levis" width="" height="">
-          <div class="brand-name__text">Технологический партнер</div>
-        </div>
+          <div class="partners-item">
+            <img class="brand-icon" src="../img/nike.png" alt="nike" width="" height="">
+            <div class="brand-name__text">Технологический партнер</div>
+          </div>
 
-        <div class="partners-item">
-          <img class="brand-icon" src="../img/intel.png" alt="intel" width="" height="">
-          <div class="brand-name__text">Технологический партнер</div>
-        </div>
+          <div class="partners-item">
+            <img class="brand-icon" src="../img/levis.png" alt="levis" width="" height="">
+            <div class="brand-name__text">Технологический партнер</div>
+          </div>
 
-        <div class="partners-item">
-          <img class="brand-icon" src="../img/netflix.png" alt="netflix" width="" height="">
-          <div class="brand-name__text">Технологический партнер</div>
-        </div>
-    </div>
+          <div class="partners-item">
+            <img class="brand-icon" src="../img/intel.png" alt="intel" width="" height="">
+            <div class="brand-name__text">Технологический партнер</div>
+          </div>
+
+          <div class="partners-item">
+            <img class="brand-icon" src="../img/netflix.png" alt="netflix" width="" height="">
+            <div class="brand-name__text">Технологический партнер</div>
+          </div>
+      </div>
 
     </section>
 
     <div class="line-border"></div>
 
-    <div class="news wrapper">
-      <div class="news-title">
-        <h2>Новости</h2>
-        <a class="btn btn--white" href="#">Смотреть все новости</a>
+
+    <section class="news">
+      <div class="news__inner">
+
+        <div class="news-title">
+          <h2>Новости</h2>
+          <a class="btn btn--white" href="#">Смотреть все новости</a>
+        </div>
+
+        <div class="news-block">
+
+          <article class="news-list">
+
+              <div class="new-item">
+                <img src="../img/news1.jpg" alt="new-photo" width="" height="">
+                <div class="new-item__date">15 Июля 2016 г.</div>
+                <div class="new-item__title">Абстрактный кубизм теорема заголовок в две строки или одну</div>
+                <div class="new-items__text">Тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации</div>
+              </div>
+
+          </article>
+
+          <article class="news-list">
+
+              <div class="new-item">
+                <img src="../img/news2.jpg" alt="new-photo" width="" height="">
+                <div class="new-item__date">15 Июля 2016 г.</div>
+                <div class="new-item__title">Абстрактный кубизм теорема заголовок в две строки или одну</div>
+                <div class="new-items__text">Тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации</div>
+              </div>
+
+          </article>
+
+          <article class="news-list">
+
+              <div class="new-item">
+                <img src="../img/news3.jpg" alt="new-photo" width="" height="">
+                <div class="new-item__date">15 Июля 2016 г.</div>
+                <div class="new-item__title">Абстрактный кубизм теорема заголовок в две строки или одну</div>
+                <div class="new-items__text">Тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации</div>
+              </div>
+
+          </article>
+
+        </div>
       </div>
-
-      <div class="news-block">
-
-        <article class="news-list">
-
-            <div class="new-item">
-              <img src="../img/news1.jpg" alt="new-photo" width="" height="">
-              <div class="new-item__date">15 Июля 2016 г.</div>
-              <div class="new-item__title">Абстрактный кубизм теорема заголовок в две строки или одну</div>
-              <div class="new-items__text">Тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации</div>
-            </div>
-
-        </article>
-
-        <article class="news-list">
-
-            <div class="new-item">
-              <img src="../img/news2.jpg" alt="new-photo" width="" height="">
-              <div class="new-item__date">15 Июля 2016 г.</div>
-              <div class="new-item__title">Абстрактный кубизм теорема заголовок в две строки или одну</div>
-              <div class="new-items__text">Тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации</div>
-            </div>
-
-        </article>
-
-        <article class="news-list">
-
-            <div class="new-item">
-              <img src="../img/news3.jpg" alt="new-photo" width="" height="">
-              <div class="new-item__date">15 Июля 2016 г.</div>
-              <div class="new-item__title">Абстрактный кубизм теорема заголовок в две строки или одну</div>
-              <div class="new-items__text">Тоталитарный тип политической культуры, что может привести к военно-политической и идеологической конфронтации</div>
-            </div>
-
-        </article>
-
-      </div>
-    </div>
+    </section>
 
     <div class="line-border"></div>
 
   </main>
 
   <footer class="footer">
-    <div class="wrapper">
+    <div class="footer__inner">
 
       <div class="footer__top">
         <div class="footer__contact">
@@ -229,32 +233,33 @@
           <a href="#">Заказать звонок</a>
         </div>
       </div>
+      </div>
 
-    </div>
+
 
 
   <div class="footer-bottom">
-    <div class="wrapper">
+    <div class="footer__inner">
 
-    <div class="copyright"><a href="#">&copy Полетаево life</a></div>
+      <div class="copyright"><a href="#">&copy Полетаево life</a></div>
 
-      <div class="social">
-        <a href="#" class="icon-social">
-          <img class="icon icon-vk" src="../img/icon-vk.png" alt="" width="" height="">
+        <div class="social">
+          <a href="#" class="icon-social">
+            <img class="icon icon-vk" src="../img/icon-vk.png" alt="" width="" height="">
+            </a>
+
+          <a href="#" class="icon-social">
+            <img class="icon icon-fb" src="../img/icon-fb.png" alt="" width="" height="">
           </a>
 
-        <a href="#" class="icon-social">
-          <img class="icon icon-fb" src="../img/icon-fb.png" alt="" width="" height="">
-        </a>
+          <a href="#" class="icon-social">
+            <img class="icon icon-tw" src="../img/icon-tw.png" alt="" width="" height="">
+          </a>
+        </div>
 
-        <a href="#" class="icon-social">
-          <img class="icon icon-tw" src="../img/icon-tw.png" alt="" width="" height="">
-        </a>
-      </div>
-
-      <div class="copyright-brand">
-        <a href="#">Сделано в<img src="../img/xpage-logo.png" alt="" width="" height=""></a>
-      </div>
+        <div class="copyright-brand">
+          <a href="#">Сделано в<img src="../img/xpage-logo.png" alt="" width="" height=""></a>
+        </div>
 
     </div>
   </div>
