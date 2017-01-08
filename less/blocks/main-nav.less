@@ -27,30 +27,19 @@
     font-weight: @regular;
     text-transform: uppercase;
   }
-
-  .main-nav__wrapper {
-    width: 980px;
-    margin: 0 auto;
-  }
-}
-
-.main-nav {
-  .inner-nav__item--activ {
+  &--activ {
     border-bottom: 2px solid @white;
   }
 }
 
-
-
 .main-nav__item {
   display: flex;
   margin-right: 4%;
-  text-align: center;
+  align-items: center;
   a {
     display: block;
     color: @white;
     text-decoration: none;
-    padding-top: 22px;
     letter-spacing: 1.55px;
   }
   &:hover {
