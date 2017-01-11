@@ -26,7 +26,6 @@
   flex-direction: row;
   height: 37px;
   a {
-    font-family: @local-font;
     font-size: 16px;
     line-height: 37px;
     text-transform: uppercase;
@@ -35,17 +34,18 @@
     letter-spacing: 1px;
   }
 
-  .feedback__phone {
-    position: relative;
-    font-family: @local-font;
-    padding: 10px;
-    color: @base-font-color;
-    font-weight: @light;
-    font-size: 20px;
-    padding-top: 6px;
-    padding-right: 22px;
-    letter-spacing: 1.5px;
-  }
+.feedback__phone {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: @local-font;
+  color: @base-font-color;
+  font-weight: @light;
+  font-size: 20px;
+  padding-right: 22px;
+  padding-left: 10px;
+  letter-spacing: 1.5px;
+}
 
 .feedback__phone::before {
   position: absolute;

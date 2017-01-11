@@ -264,5 +264,43 @@
 
   </footer>
 
+  <section class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2>Заказать звонок</h2>
+      <form class="login-form" action="#" method="get">
+        <ul class="introduction__list">
+          <li class="introduction__item">
+            <label class="introduction__text  introduction__text--username" for="username">Имя*:</label>
+            <input class="introduction__input  introduction__input--username" type="text" name="username" placeholder="Петр" id="username" required>
+          </li>
+          <li class="introduction__input introduction__input--phone">
+            <label class="contact__text  contact__text--phone-number" for="phone-number">телефон*:</label>
+            <input class="contact__input  contact__input--phone-number" type="tel" name="phone-number" placeholder="Введите телефон" id="phone-number" required>
+          </li>
+        </ul>
+
+            <button class="btn  popup--success__button" type="button">Закрыть окно</button>
+          </form>
+  </section>
+
+<script>
+  var link = document.querySelector(".feedback__btn--right--green");
+  var popup = document.querySelector(".modal-content");
+  var close = document.querySelector(".modal-content-close");
+
+  link.addEventListener("click", function(event){
+    event.preventDefault();
+    popup.classList.add("modal-content-show");
+
+  });
+
+  close.addEventListener("click", function(event){
+    event.preventDefault();
+    popup.classList.remove("modal-content-show");
+
+  });
+
+</script>
+
 </body>
 </html>

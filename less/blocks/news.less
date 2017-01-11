@@ -5,20 +5,26 @@
   font-size: 17px;
   line-height: 25px;
 
-
-  .news-title {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 50px;
-    padding-top: 56px;
-    padding-bottom: 35px;
-  }
   .news__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     padding: 0 25px;
     max-width: 980px;
     margin: 0 auto;
     min-height: 685px;
+  }
+}
+
+.news-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-self: center;
+  h2 {
+    width: auto;
   }
 }
 
